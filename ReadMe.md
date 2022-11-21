@@ -16,8 +16,13 @@
 
 ## Using ROS
 I also tested [apriltag_ros][4] which is ROS wrapper of the AprilTag 3 visual fiducial detector.
-to use it, i simply created my catkin workspace, cloned package into my src directory
-and built it. I was able to use the library with
+to use it, i simply cloned the packages into my catkin workspace src directory.
+
+```git clone https://github.com/AprilRobotics/apriltag_ros.git```
+
+```git clone https://github.com/AprilRobotics/apriltag.git```
+
+Build it using ```catkin build``` and source it. I was able to use the library with
 ```$ roslaunch apriltag_ros single_image_server.launch```
 ```$ roslaunch apriltag_ros single_image_client.launch image_load_path:=<absolute_path> image_save_path:=<absolute_path>```
 but before, I needed to configure ```tags.yaml``` with the standalone tags and tag bundles which we want to detect and ```settings.yaml``` with the wrapper and apriltag core parameters. *I am still working on it*
