@@ -1,5 +1,5 @@
 # DFKI test
-## [Google Colab notebook][3]
+## [Google Colab notebook][3] or view it [here][5]
   - Note: you will need to upload the image which needs to be proccessed
   - This example uses the open source library [AprilTag][1]
   - I decided to work on Colab as it is quite robust and the latest tools were readily available.  
@@ -32,3 +32,4 @@ but before, I needed to configure ```tags.yaml``` with the standalone tags and t
 [2]: https://github.com/duckietown/lib-dt-apriltags "DuckieTown"
 [3]: https://colab.research.google.com/drive/1XdHN6jGLSZi8vrl14dyxkW4VbbkuZWID?usp=sharing "Google Colab notebook"
 [4]: https://github.com/AprilRobotics/apriltag_ros "apriltag_ros"
+[5]: https://github.com/faraz7321/DFKI_test/blob/master/dfki_test.ipynb "here"
