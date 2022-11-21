@@ -4,17 +4,25 @@
   - This example uses the open source library [AprilTag][1]
 
 ## Another example is based on the AprilTag python bindings created by [DuckieTown][2].
-  - you can install it with pip
-  - ``` $ pip install dt-apriltags ```
+  - ```git clone https://github.com/faraz7321/DFKI_test.git```
+  - ```cd catkin_ws/``` and ```catkin build```
+  - ```source devel/setup.bash```
+  - script can be found in ```DFKI_test/catkin_ws/src/my_project/scripts/duckietown_at.py```
+  - to install duckietown library
+   ``` $ pip install dt-apriltags ```
+  - run the test file using  ``` python3 -u "../duckietown_at.py -i <image_path>" ```
+  - or with ```rosrun my_project duckietown_at.py -i <image_path>```
 
-I also tested apriltag_ros which is ROS wrapper of the AprilTag 3 visual fiducial detector.
+
+## Using ROS
+I also tested [apriltag_ros][4] which is ROS wrapper of the AprilTag 3 visual fiducial detector.
 to use it, i simply created my catkin workspace, cloned package into my src directory
-and built it. I was able to use it with
-$ roslaunch apriltag_ros single_image_server.launch
-$ roslaunch apriltag_ros single_image_client.launch image_load_path:=<absolute_path>
-image_save_path:=<absolute_path>
-but before, I needed to configure tags.yaml with the standalone tags and tag bundles which we want to detect and settings.yaml with the wrapper and apriltag core parameters. _I am still working on it_
+and built it. I was able to use the library with
+```$ roslaunch apriltag_ros single_image_server.launch```
+```$ roslaunch apriltag_ros single_image_client.launch image_load_path:=<absolute_path> image_save_path:=<absolute_path>```
+but before, I needed to configure ```tags.yaml``` with the standalone tags and tag bundles which we want to detect and ```settings.yaml``` with the wrapper and apriltag core parameters. *I am still working on it*
 
 [1]: https://github.com/AprilRobotics/apriltag "AprilTag"
 [2]: https://github.com/duckietown/lib-dt-apriltags "DuckieTown"
 [3]: https://colab.research.google.com/drive/1MEP59MF5hHvQMyfxJXglxgVy5iLYFS-7?usp=sharing "Notebook"
+[4]: https://github.com/AprilRobotics/apriltag_ros "apriltag_ros"
