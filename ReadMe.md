@@ -2,6 +2,7 @@
 ## Google Colab notebook: [Notebook][3]
   - Note: you will need to upload the image which needs to be proccessed
   - This example uses the open source library [AprilTag][1]
+  - I decided to work on Colab as it is quite robust and the latest tools were readily available.  
 
 ## Another example is based on the AprilTag python bindings created by [DuckieTown][2].
   - ```git clone https://github.com/faraz7321/DFKI_test.git```
