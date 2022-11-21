@@ -15,6 +15,6 @@ $ roslaunch apriltag_ros single_image_client.launch image_load_path:=<absolute_p
 image_save_path:=<absolute_path>
 but before, I needed to configure tags.yaml with the standalone tags and tag bundles which we want to detect and settings.yaml with the wrapper and apriltag core parameters. _I am still working on it_
 
-[1]: github: https://github.com/AprilRobotics/apriltag
-[2]: https://github.com/duckietown/lib-dt-apriltags
-[3]: https://colab.research.google.com/drive/1MEP59MF5hHvQMyfxJXglxgVy5iLYFS-7?usp=sharing
+[1]: github: https://github.com/AprilRobotics/apriltag "AprilTag"
+[2]: https://github.com/duckietown/lib-dt-apriltags "DuckieTown"
+[3]: https://colab.research.google.com/drive/1MEP59MF5hHvQMyfxJXglxgVy5iLYFS-7?usp=sharing "Notebook"
