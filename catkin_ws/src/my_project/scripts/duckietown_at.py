@@ -2,7 +2,15 @@
 # Import libraries
 
 from dt_apriltags import Detector
+import argparse
 import cv2
+
+# %%
+# construct the argument parser and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--image", required=True,
+                help="absolute path to input image containing AprilTag")
+args = vars(ap.parse_args())
 
 # %%
 # using duckietown based apriltags detector
@@ -18,7 +26,7 @@ at_detector = Detector(families='tag36h11',
 # %%
 print("\nTESTING WITH A SAMPLE IMAGE")
 
-img = cv2.imread("image.png")  # colored image
+img = cv2.imread(args["image"])  # colored image
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  # grayscale image
 
 # %%
