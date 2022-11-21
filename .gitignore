@@ -3,3 +3,5 @@ catkin_ws/build
 catkin_ws/devel
 catkin_ws/logs
 catkin_ws/.catkin_tools
+catkin_ws/src/apriltag/example/apriltag_demo.c
+catkin_ws/src/apriltag/example/opencv_demo.cc
