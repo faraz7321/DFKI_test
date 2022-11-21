@@ -5,7 +5,7 @@
 
 ## Another example is based on the AprilTag python bindings created by [DuckieTown][2].
   - ```git clone https://github.com/faraz7321/DFKI_test.git```
-  - ```cd catkin_ws/``` and ```catkin build```
+  - ```cd DFKI_test/catkin_ws/``` and ```catkin build```
   - ```source devel/setup.bash```
   - script can be found in ```DFKI_test/catkin_ws/src/my_project/scripts/duckietown_at.py```
   - to install duckietown library
