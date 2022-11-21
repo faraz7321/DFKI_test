@@ -30,5 +30,5 @@ but before, I needed to configure ```tags.yaml``` with the standalone tags and t
 
 [1]: https://github.com/AprilRobotics/apriltag "AprilTag"
 [2]: https://github.com/duckietown/lib-dt-apriltags "DuckieTown"
-[3]: https://colab.research.google.com/drive/1MEP59MF5hHvQMyfxJXglxgVy5iLYFS-7?usp=sharing "Google Colab notebook"
+[3]: https://colab.research.google.com/drive/1XdHN6jGLSZi8vrl14dyxkW4VbbkuZWID?usp=sharing "Google Colab notebook"
 [4]: https://github.com/AprilRobotics/apriltag_ros "apriltag_ros"
